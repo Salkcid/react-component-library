@@ -1,24 +1,22 @@
 import { MouseEventHandler, FC, ChangeEventHandler } from 'react';
 
-declare type ButtonProps = {
+declare type Props$1 = {
     text?: string;
     primary?: boolean;
     disabled?: boolean;
     size?: "small" | "medium" | "large";
     onClick?: MouseEventHandler<HTMLButtonElement>;
 };
-declare const _: FC<ButtonProps>;
+declare const _$1: FC<Props$1>;
 
-type Button_d_ButtonProps = ButtonProps;
-declare const Button_d__: typeof _;
 declare namespace Button_d {
   export {
-    Button_d_ButtonProps as ButtonProps,
-    Button_d__ as _,
+    Props$1 as Props,
+    _$1 as _,
   };
 }
 
-interface InputProps {
+interface Props {
     id?: string;
     label?: string;
     error?: boolean;
@@ -28,13 +26,14 @@ interface InputProps {
     placeholder?: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
 }
-declare const Input: FC<InputProps>;
+declare const _: FC<Props>;
 
-type Input_d_InputProps = InputProps;
+type Input_d_Props = Props;
+declare const Input_d__: typeof _;
 declare namespace Input_d {
   export {
-    Input as default,
-    Input_d_InputProps as InputProps,
+    Input_d_Props as Props,
+    Input_d__ as _,
   };
 }
 
